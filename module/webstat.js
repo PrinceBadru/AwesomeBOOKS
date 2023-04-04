@@ -1,12 +1,12 @@
-export default class WebStat {
+export default class webstat {
   constructor(config) {
-    WebStatus.webSections = config.webSections;
-    WebStatus.defaultSection = WebStatus.webSections[config.defaultSection];
-    WebStatus.getDomSections();
-    WebStatus.getLinkElements();
-    WebStatus.bindLinksToSections();
+    webstat.webSections = config.webSections;
+    webstat.defaultSection = webstat.webSections[config.defaultSection];
+    webstat.getDomSections();
+    webstat.getLinkElements();
+    webstat.bindLinksToSections();
 
-    WebStatus.changeSection(WebStatus.defaultSection);
+    webstat.changeSection(webstat.defaultSection);
   }
 
     static webSections = []
@@ -18,38 +18,38 @@ export default class WebStat {
     static linkElements = []
 
     static getDomSections = () => {
-      WebStatus.webSections.forEach((section) => {
+      webstat.webSections.forEach((section) => {
         const myDomSection = document.getElementById(section);
-        WebStatus.domElements.push(myDomSection);
+        webstat.domElements.push(myDomSection);
       });
     }
 
     static getLinkElements = () => {
-      WebStatus.webSections.forEach((section) => {
+      webstat.webSections.forEach((section) => {
         const myLinkElement = document.getElementById(`${section}-link`);
-        WebStatus.linkElements.push(myLinkElement);
+        webstat.linkElements.push(myLinkElement);
       });
     }
 
     static hideAllSections = () => {
-      WebStatus.domElements.forEach((section) => {
+      webstat.domElements.forEach((section) => {
         section.classList.add('hidden');
       });
     }
 
     static bindLinksToSections = () => {
-      WebStatus.linkElements.forEach((link, index) => {
+      webstat.linkElements.forEach((link, index) => {
         link.addEventListener('click', () => {
-          WebStatus.hideAllSections();
-          WebStatus.domElements[index].classList.remove('hidden');
+          webstat.hideAllSections();
+          webstat.domElements[index].classList.remove('hidden');
         });
       });
     }
 
     static changeSection = (newSection) => {
-      WebStatus.domElements.forEach((section) => {
+      webstat.domElements.forEach((section) => {
         if (section.id === newSection) {
-          WebStatus.hideAllSections();
+          webstat.hideAllSections();
           section.classList.remove('hidden');
         }
       });

@@ -16,7 +16,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: 'Itim', cursive;
+  font-family: 'Poppins', sans-serif;
   padding: 20px;
 }
 
@@ -50,7 +50,6 @@ body {
   font-size: 1.5rem;
   list-style: none;
 }
-
 
 .nav__title1 {
   font-size: 1.4rem;
@@ -126,15 +125,15 @@ h1 {
   overflow-y: auto;
 }
 
-#book-list > li:nth-child(odd) {
-  background-color: rgb(242, 178, 178);
-}
-
 #book-list li {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 6px;
+}
+
+#book-list > li:nth-child(odd) {
+  background-color: rgb(242, 178, 178);
 }
 
 li span {

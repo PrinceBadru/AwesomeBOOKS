@@ -1,7 +1,7 @@
 import Book from './book.js';
-import WebStatus from './webStatus.js';
+import WebStatus from './webstat.js';
 
-export default class BookList {
+export default class bookList {
   constructor() {
     this.bookList = [];
     this.domBookList = document.querySelector('#book-list');

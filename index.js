@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import Book from './modules/book.js';
-import WebStatus from './modules/webstat.js';
-import Clock from './modules/time.js';
+import Book from './module/book.js';
+import WebStatus from './module/webstat.js';
+import Clock from './module/time.js';
 
-const myList = new BookList();
+const myList = new Book();
 
 const myWebStatus = new WebStatus({
   webSections: [

@@ -1,4 +1,4 @@
-import { DateTime } from './luxon/luxon.min.js';
+import { DateTime } from './Luxon/luxon.min.js';
 
 export default class Clock {
   constructor(domElement) {
