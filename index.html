@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books with ES6</title>
+
+    <!-- custom CSS style file link -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- custom JS script file link -->
+
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+
+     <!-- Navbar section starts here -->
+     <nav id="navbar" class="border">
+        <h3 class="nav__title1">Awesome Books</h3>
+        <ul class="nav__list1">
+            <li class="list" id="book-list-section-link">List</li>
+            <li class="addNew" id="add-book-section-link">Add New</li>
+            <li class="contact" id="contact-section-link">Contact</li>
+        </ul>
+    </nav>
+    <div id="date"></div>
+
+    <!-- Navbar section ends here -->
+    <section id="book-list-section" class="hidden">
+        <h1>Awesome books</h1>
+        <ul id="book-list" class="border">
+        </ul>
+    </section>
+    <section id="add-book-section" class="hidden">
+        <form>
+            <h2>Add a new book</h2>
+            <input type="text" placeholder="Title" name="Title" id="input-title">
+            <input type="text" placeholder="Author" name="Author" id="input-author">
+            <button id="button-add">Add</button>
+            <h3 id="errorMsg" class="hidden">Please add some books</h3>
+        </form>
+    </section>
+    <section id="contact-section" class="hidden">
+        <div class="contactText">
+            <h2>Contacts</h2>
+            <p>You can reach out to us to have a chat</p>
+        </div>
+        <ul class="contact__mainList">
+            <li> E-mail: badrundawula23@gmail.com
+                <ul class="contact__emailList">
+                    <li>badrundawula23@gmail.com</li>
+                </ul>
+            </li>
+            <li>Our Phone Number: +256 755481373
+                <ul class="contact__phoneList">
+                    <li>+256 755481373</li>
+                </ul>
+            </li>
+            <li>Our Address: Kampala,Uganda.
+                <ul class="contact__addressList">
+                    <li>Nakawa, Ntinda </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer Section Starts here -->
+    <footer class="border">
+        <h3 class="nav__title">Copyrights</h3>
+    </footer>
+    <!-- Footer Section Ends here -->
+
+</body>
+</html>
